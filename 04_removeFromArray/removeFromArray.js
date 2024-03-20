@@ -1,11 +1,10 @@
 const removeFromArray = function(array) {
+    let newArray = [];
 
-    let position;
-    let newArray = array;
-
-    while (array.indexOf(3) > -1) {
-        position = array.indexOf(3);
-        newArray.splice(position);
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] != arguments[1]) {
+            newArray.push(array[i]);
+        }
     }
 
     return newArray;
